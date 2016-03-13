@@ -51,3 +51,17 @@ async def execute(sql, args, autocommit = True):
                 await conn.rollback()
             raise
         return affected
+
+def create_args_string(num):
+    L = []
+    for n in rang(num):
+        L.append('?')
+    return ', '.join(L)
+
+def Fiedl(object):
+    def __init__(self, name, column_type, primary_key, default):
+        self.name = name
+        self.column_type = column_type
+        self.primary_key = primary_key
+        self.default = default
+
