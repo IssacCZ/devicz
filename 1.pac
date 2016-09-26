@@ -1,4 +1,4 @@
-var proxy = "PROXY 45.63.55.84:8386;";
+var proxy = "PROXY 45.63.55.84:25;";
 
 var domains = {
   "10musume.com": 1, 
